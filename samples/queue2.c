@@ -9,9 +9,9 @@
   its level-1 interface is doing the same level of abstraction.
 */
 
-#define SGLIB_NQUEUE_TYPEDEF(type, dim, queuetype) \
+#define SGLIB_NQUEUE_TYPEDEF(type, dim_, queuetype) \
   typedef struct queuetype { \
-    type a[dim]; \
+    type a[dim_]; \
     int i,j; \
     int dim; \
   } queuetype;
